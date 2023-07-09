@@ -15,3 +15,15 @@ item[0].style.color="green";
 // item.style.borderBottom="4px solid orange";
 item[0].style.fontWeight= "bold";
 header.style.border="5px solid pink";
+
+
+//Make the 3 rd element in the list have green background color
+let hidden= document.getElementsByClassName('list-group-item');
+console.log(hidden);
+hidden[2].style.backgroundColor= "green";
+
+//Make all the elements in the list have bold color font
+for(let i =0;i<hidden.length; i++)
+{
+    hidden[i].style.fontWeight= "bold";
+}
