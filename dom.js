@@ -49,9 +49,19 @@
 // c) Using QuerySelectorALL change the font color to green for 2nd item in the item list
 // d) Choose all the odd elements and make their background green using QuerySelectorALL
   
-let item2= document.querySelector('.list-group-item:nth-child(2)');
-item2.style.backgroundColor= "green";
-let item3= document.querySelector('.list-group-item:nth-child(3)');
-item3.style.visibility="hidden";
+// let item2= document.querySelector('.list-group-item:nth-child(2)');
+// item2.style.backgroundColor= "green";
+// let item3= document.querySelector('.list-group-item:nth-child(3)');
+// item3.style.visibility="hidden";
+
+let seconditem= document.querySelectorAll('li:nth-child(2)')
+//I have changed the font color to light green as green font became invisible on green background.
+ seconditem[0].style.color= "green";
 
 
+let odd= document.querySelectorAll('li:nth-child(odd)');
+// console.log(odd);
+ for(let i=0;i<odd.length;i++)
+ {
+    odd[i].style.backgroundColor="green";
+ }
